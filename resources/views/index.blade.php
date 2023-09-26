@@ -1,5 +1,9 @@
-<a href="{{url('home')}}">home</a>
-<a href="{{url('about')}}">about</a>
 
+@include("inc.header")
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
+<h1>hello world</h1>
 
-<h1>hello home</h1>
+@include("inc.footer",["desc"=>"infinity flame soft"])

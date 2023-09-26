@@ -59,7 +59,7 @@ Route::group(['prefix'=>'accounts'],function(){
 
 
 
-Route::get('/demo/{fname}',[demoController::class,'demo']);
+Route::get('/demo',[demoController::class,'data']);
 
 /* single controller */
 
@@ -76,6 +76,19 @@ Route::resource('resource',ResourceController::class);
 
 Route::get('/blade',[demoController::class,'bladeView']);
 
+
+
+//Route::get('demo',[demoController::class,'bladeView']);
+
+
+
+/* include */
+
+Route::get("/inc",function(){
+
+  return view("index");
+
+});
 
 
 

@@ -34,15 +34,15 @@ class demoController extends Controller
     return view("about");
    }
 
-     function bladeView(){
+     
 
+    
 
-        return $firstname="<script>alert('hello mishu')</script>";
+     function data(){
+      $fruit=array("apple","orange","mango");
+      $car=array("bmw","audi","corolla");
 
-        return view('demo',['fname'=>$firstname]);
-
-
-
+      return view("demo",["fruitKey"=>$fruit,"carkey"=>$car]);
      }
 
 
